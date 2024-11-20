@@ -1,16 +1,17 @@
 ﻿using NUnit.Framework;
+using RecentlyUsedList;
 
-namespace UnitTests;
+namespace UnitTesting;
 
 [TestFixture]
 public class RecentlyUsedListTests
 {
-    private List<string> _list;
+    private RecentlyUsedListClass _list;
 
     [SetUp]
     public void SetUp()
     {
-        _list = new List<string>();
+        _list = new RecentlyUsedListClass();
     }
 
     [Test]
@@ -59,7 +60,7 @@ public class RecentlyUsedListTests
     public void BoundedCapacity_LimitsListSize()
     {
         // Arrange & Act
-        var boundedList = new List<string>();
+        var boundedList = new RecentlyUsedListClass(3);
         boundedList.Add("item1");
         boundedList.Add("item2");
         boundedList.Add("item3");
@@ -106,7 +107,7 @@ public class RecentlyUsedListTests
     public void DefaultCapacity_IsFive()
     {
         // Arrange & Act
-        var defaultList = new List<string>();
+        var defaultList = new RecentlyUsedListClass();
 
         // Assert
         Assert.That(defaultList.Capacity, Is.EqualTo(5));
@@ -116,7 +117,7 @@ public class RecentlyUsedListTests
     public void UnboundedList_HandlesUnlimitedItems()
     {
         // Arrange & Act
-        var unboundedList = new List<string>();
+        var unboundedList = new RecentlyUsedListClass(0);
         for (int i = 0; i < 1000; i++)
         {
             unboundedList.Add($"item{i}");

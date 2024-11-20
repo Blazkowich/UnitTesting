@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BearAndSteadyGene\BearAndSteadyGene.csproj" />
     <ProjectReference Include="..\BinaryGap\BinaryGap.csproj" />
+    <ProjectReference Include="..\RecentlyUsedList\RecentlyUsedList.csproj" />
   </ItemGroup>
 
 </Project>
