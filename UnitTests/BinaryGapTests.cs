@@ -1,16 +1,17 @@
-﻿using NUnit.Framework;
+﻿using BinaryGap;
+using NUnit.Framework;
 
 namespace UnitTests;
 
 [TestFixture]
 public class BinaryGapTests
 {
-    private string _solver;
+    private BinaryGapClass _solver;
 
     [SetUp]
     public void SetUp()
     {
-        _solver = "";
+        _solver = new BinaryGapClass();
     }
 
     [Test]
@@ -21,7 +22,7 @@ public class BinaryGapTests
         int expected = 2;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));
@@ -35,7 +36,7 @@ public class BinaryGapTests
         int expected = 4;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));
@@ -49,7 +50,7 @@ public class BinaryGapTests
         int expected = 0;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
 
@@ -63,7 +64,7 @@ public class BinaryGapTests
         int expected = 0;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));
@@ -77,7 +78,7 @@ public class BinaryGapTests
         int expected = 0;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));
@@ -91,7 +92,7 @@ public class BinaryGapTests
         int expected = 0;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));
@@ -105,7 +106,7 @@ public class BinaryGapTests
         int expected = 1;
 
         // Act
-        int result = 0; // _solver.Solution(input);
+        int result = _solver.Solution(input);
 
         // Assert
         Assert.That(result, Is.EqualTo(expected));

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BearAndSteadyGene", "BearAndSteadyGene\BearAndSteadyGene.csproj", "{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGap", "BinaryGap\BinaryGap.csproj", "{8CB05813-A838-41BA-96AD-140FD64A335F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB05813-A838-41BA-96AD-140FD64A335F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB05813-A838-41BA-96AD-140FD64A335F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB05813-A838-41BA-96AD-140FD64A335F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB05813-A838-41BA-96AD-140FD64A335F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
