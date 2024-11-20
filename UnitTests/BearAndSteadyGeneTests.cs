@@ -1,13 +1,16 @@
-﻿using NUnit.Framework;
+﻿using BearAndSteadyGene;
+using NUnit.Framework;
 
 namespace UnitTests;
 
 public class BearAndSteadyGeneTests
 {
-    
+    private BearAndSteadyGeneClass _bearAndSteady;
+
     [SetUp]
     public void SetUp()
     {
+        _bearAndSteady = new BearAndSteadyGeneClass();
     }
 
     [Test]
@@ -18,7 +21,7 @@ public class BearAndSteadyGeneTests
         int n = 8;
 
         // Act
-        int result = 0; // must be (n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(8));
@@ -32,7 +35,7 @@ public class BearAndSteadyGeneTests
         int n = 4;
 
         // Act
-        int result = 0; // must be (n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(0));
@@ -46,7 +49,7 @@ public class BearAndSteadyGeneTests
         int n = 4;
 
         // Act
-        int result = 0; // must be (n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(4));
@@ -60,7 +63,7 @@ public class BearAndSteadyGeneTests
         int n = 8;
 
         // Act
-        int result = 0; // must be (n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(0));
@@ -74,7 +77,7 @@ public class BearAndSteadyGeneTests
         int n = 12;
 
         // Act
-        int result = 0; // must be(n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(12));
@@ -88,7 +91,7 @@ public class BearAndSteadyGeneTests
         int n = 500000;
 
         // Act
-        int result = 0; //must be (n, s);
+        int result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.GreaterThanOrEqualTo(0));

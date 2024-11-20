@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{30D77FDC-C787-4178-A737-79F651D49D14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BearAndSteadyGene", "BearAndSteadyGene\BearAndSteadyGene.csproj", "{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{30D77FDC-C787-4178-A737-79F651D49D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D77FDC-C787-4178-A737-79F651D49D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D77FDC-C787-4178-A737-79F651D49D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB653A6-BBD3-4CB2-B006-E6AF7E2CA5CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
