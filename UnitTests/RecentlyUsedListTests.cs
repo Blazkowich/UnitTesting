@@ -18,7 +18,7 @@ public class RecentlyUsedListTests
     public void NewList_IsEmpty()
     {
         // Arrange
-        int count = _list.Count;
+        var count = _list.Count;
 
         // Act & Assert
         Assert.That(count, Is.EqualTo(0));

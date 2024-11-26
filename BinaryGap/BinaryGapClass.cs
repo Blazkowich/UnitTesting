@@ -2,12 +2,12 @@
 {
     public class BinaryGapClass
     {
-        public int Solution(int n)
+        public static int Solution(int n)
         {
-            string binary = Convert.ToString(n, 2);
-            int maxGap = 0;
-            int currentGap = 0;
-            bool counting = false;
+            var binary = Convert.ToString(n, 2);
+            var maxGap = 0;
+            var currentGap = 0;
+            var counting = false;
 
             foreach (char bit in binary)
             {

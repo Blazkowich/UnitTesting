@@ -4,7 +4,7 @@
     {
         public int MinimumReplacementLength(int n, string s)
         {
-            int targetCount = n / 4;
+            var targetCount = n / 4;
             var freq = new Dictionary<char, int> { { 'A', 0 }, { 'C', 0 }, { 'T', 0 }, { 'G', 0 } };
 
             foreach (char c in s)
@@ -17,10 +17,10 @@
                 return 0;
             }
 
-            int minLength = n;
-            int left = 0;
+            var minLength = n;
+            var left = 0;
 
-            for (int right = 0; right < n; right++)
+            for (var right = 0; right < n; right++)
             {
                 freq[s[right]]++;
 
@@ -35,7 +35,7 @@
             return minLength;
         }
 
-        private bool IsValid(Dictionary<char, int> freq, int targetCount)
+        private static bool IsValid(Dictionary<char, int> freq, int targetCount)
         {
             return freq['A'] <= targetCount && freq['C'] <= targetCount && freq['T'] <= targetCount && freq['G'] <= targetCount;
         }

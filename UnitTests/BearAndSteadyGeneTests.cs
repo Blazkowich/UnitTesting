@@ -17,11 +17,11 @@ public class BearAndSteadyGeneTests
     public void CaseWhenEqualsEight()
     {
         // Arrange
-        string s = "GAAATAAA";
-        int n = 8;
+        var s = "GAAATAAA";
+        var n = 8;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(8));
@@ -31,11 +31,11 @@ public class BearAndSteadyGeneTests
     public void CaseWhenEqualsZero()
     {
         // Arrange
-        string s = "GACT";
-        int n = 4;
+        var s = "GACT";
+        var n = 4;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(0));
@@ -45,11 +45,11 @@ public class BearAndSteadyGeneTests
     public void CaseWithAllSameCharacters()
     {
         // Arrange
-        string s = "AAAA";
-        int n = 4;
+        var s = "AAAA";
+        var n = 4;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(4));
@@ -59,11 +59,11 @@ public class BearAndSteadyGeneTests
     public void LargerGeneWithMultipleSubstrings()
     {
         // Arrange
-        string s = "ACGTACGT";
-        int n = 8;
+        var s = "ACGTACGT";
+        var n = 8;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(0));
@@ -73,11 +73,11 @@ public class BearAndSteadyGeneTests
     public void ComplexCaseWithUnbalancedCharacters()
     {
         // Arrange
-        string s = "GGATAGCTGCTT";
-        int n = 12;
+        var s = "GGATAGCTGCTT";
+        var n = 12;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.EqualTo(12));
@@ -87,11 +87,11 @@ public class BearAndSteadyGeneTests
     public void CaseWithMaximumLength()
     {
         // Arrange
-        string s = "A" + new string('G', 499999);
-        int n = 500000;
+        var s = "A" + new string('G', 499999);
+        var n = 500000;
 
         // Act
-        int result = _bearAndSteady.MinimumReplacementLength(n, s);
+        var result = _bearAndSteady.MinimumReplacementLength(n, s);
 
         // Assert
         Assert.That(result, Is.GreaterThanOrEqualTo(0));
